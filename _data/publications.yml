@@ -1,34 +1,82 @@
-# Publications rendered on /publications/ (grouped by year) and, when
-# selected: true, in the homepage "Selected Publications" section.
+# Publications rendered on /publications/ (grouped by year, YAML order within
+# a year) and, when selected: true, in the homepage "Selected Publications"
+# section (first three).
 # Every key under links: is optional; only present keys render as pills.
-# type is one of: conference | journal | workshop | preprint
+# type is one of: conference | journal | workshop | demo | preprint
+# note renders after the venue (e.g. "To appear", "*Equal contribution").
 
-- title: "Placeholder Paper Title: A Study of Placeholder Systems"
-  authors: "Tyler Stennett, Coauthor One, Coauthor Two"
-  venue: "Proceedings of the Placeholder Conference (PLHC '26)"
+- title: "Sakura: An Approach for Generating Complex Tests from Natural Language Test Descriptions"
+  authors: "Tyler Stennett, Rangeet Pan, Bridget McGinn, Alessandro Orso, Saurabh Sinha"
+  venue: "Proceedings of the 35th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA '26)"
   year: 2026
   type: conference
   selected: true
+  note: "To appear"
   links:
-    pdf: "#"
-    doi: "#"
-    code: "https://github.com/tylerstennett"
+    pdf: "https://arxiv.org/pdf/2606.00530"
+    code: "https://github.com/aster-test-generation/sakura"
 
-- title: "A Second Placeholder Paper on Placeholder Methods"
-  authors: "Coauthor One, Tyler Stennett, Coauthor Three"
-  venue: "Placeholder Workshop at PLHC (PLHW '26)"
+- title: "SAINT: Service-level Integration Test Generation with Program Analysis and LLM-based Agents"
+  authors: "Rangeet Pan, Raju Pavuluri, Ruikai Huang, Rahul Krishna, Tyler Stennett, Alessandro Orso, Saurabh Sinha"
+  venue: "Proceedings of the IEEE/ACM 48th International Conference on Software Engineering (ICSE '26)"
+  year: 2026
+  type: conference
+  selected: false
+  links:
+    pdf: "https://arxiv.org/pdf/2511.13305"
+
+- title: "Hamster: A Large-Scale Study and Characterization of Developer-Written Tests"
+  authors: "Rangeet Pan*, Tyler Stennett*, Raju Pavuluri, Nate Levin, Alessandro Orso, Saurabh Sinha"
+  venue: "Proceedings of the IEEE/ACM 48th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP '26)"
+  year: 2026
+  type: conference
+  selected: true
+  note: "*Equal contribution"
+  links:
+    pdf: "https://arxiv.org/pdf/2509.26204"
+    doi: "https://doi.org/10.1145/3786583.3786857"
+    code: "https://github.com/aster-test-generation/hamster-empirical-study"
+
+- title: "AutoRestTest at the SBFT 2026 Tool Competition"
+  authors: "Tyler Stennett, Myeongsoo Kim, Saurabh Sinha, Alessandro Orso"
+  venue: "Proceedings of the 19th ACM/IEEE International Workshop on Search-Based and Fuzz Testing (SBFT '26)"
   year: 2026
   type: workshop
   selected: false
   links:
-    pdf: "#"
+    pdf: "https://arxiv.org/pdf/2607.01063"
+    doi: "https://doi.org/10.1145/3786155.3795701"
+    code: "https://github.com/selab-gatech/AutoRestTest"
 
-- title: "An Earlier Placeholder Paper Before the PhD"
-  authors: "Tyler Stennett, Coauthor Four"
-  venue: "Placeholder Journal of Examples, Vol. 1"
+- title: "A Multi-Agent Approach for REST API Testing with Semantic Graphs and LLM-Driven Inputs"
+  authors: "Myeongsoo Kim, Tyler Stennett, Saurabh Sinha, Alessandro Orso"
+  venue: "Proceedings of the IEEE/ACM 47th International Conference on Software Engineering (ICSE '25)"
   year: 2025
-  type: journal
+  type: conference
   selected: true
   links:
-    pdf: "#"
-    doi: "#"
+    pdf: "https://arxiv.org/pdf/2411.07098"
+    doi: "https://doi.org/10.1109/ICSE55347.2025.00179"
+    code: "https://github.com/selab-gatech/AutoRestTest"
+
+- title: "AutoRestTest: A Tool for Automated REST API Testing Using LLMs and MARL"
+  authors: "Tyler Stennett, Myeongsoo Kim, Saurabh Sinha, Alessandro Orso"
+  venue: "Companion Proceedings of the IEEE/ACM 47th International Conference on Software Engineering (ICSE-Companion '25)"
+  year: 2025
+  type: demo
+  selected: false
+  links:
+    pdf: "https://arxiv.org/pdf/2501.08600"
+    doi: "https://doi.org/10.1109/ICSE-Companion66252.2025.00015"
+    code: "https://github.com/selab-gatech/AutoRestTest"
+
+- title: "Leveraging Large Language Models to Improve REST API Testing"
+  authors: "Myeongsoo Kim, Tyler Stennett, Dhruv Shah, Saurabh Sinha, Alessandro Orso"
+  venue: "Proceedings of the 46th International Conference on Software Engineering: New Ideas and Emerging Results (ICSE-NIER '24)"
+  year: 2024
+  type: conference
+  selected: false
+  links:
+    pdf: "https://arxiv.org/pdf/2312.00894"
+    doi: "https://doi.org/10.1145/3639476.3639769"
+    code: "https://github.com/selab-gatech/RESTGPT"

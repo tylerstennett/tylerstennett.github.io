@@ -1,7 +1,7 @@
 <div class="pub">
   <div class="pub-title">{{ include.pub.title }}</div>
   <div class="pub-authors">{{ include.pub.authors | replace: "Tyler Stennett", "<strong>Tyler Stennett</strong>" }}</div>
-  <div class="pub-venue">{{ include.pub.venue }}, {{ include.pub.year }}</div>
+  <div class="pub-venue">{{ include.pub.venue }}, {{ include.pub.year }}{% if include.pub.note %} &middot; <span class="pub-note">{{ include.pub.note }}</span>{% endif %}</div>
   {% if include.pub.links %}
   <div class="pub-links">
     {% for link in include.pub.links %}<a class="pill" href="{{ link[1] }}">{{ link[0] }}</a>{% endfor %}
