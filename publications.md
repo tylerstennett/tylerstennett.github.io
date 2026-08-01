@@ -3,7 +3,7 @@ title: Publications
 permalink: /publications/
 ---
 
-Publications are listed in reverse chronological order. See also my *[Google Scholar profile]* and *[DBLP page]* (placeholders — add links).
+Publications are listed in reverse chronological order. See also my [DBLP page](https://dblp.org/pid/362/5802.html).
 
 {% assign years = site.data.publications | map: "year" | uniq | sort | reverse %}
 {% for y in years %}
