@@ -1,0 +1,34 @@
+# Publications rendered on /publications/ (grouped by year) and, when
+# selected: true, in the homepage "Selected Publications" section.
+# Every key under links: is optional; only present keys render as pills.
+# type is one of: conference | journal | workshop | preprint
+
+- title: "Placeholder Paper Title: A Study of Placeholder Systems"
+  authors: "Tyler Stennett, Coauthor One, Coauthor Two"
+  venue: "Proceedings of the Placeholder Conference (PLHC '26)"
+  year: 2026
+  type: conference
+  selected: true
+  links:
+    pdf: "#"
+    doi: "#"
+    code: "https://github.com/tylerstennett"
+
+- title: "A Second Placeholder Paper on Placeholder Methods"
+  authors: "Coauthor One, Tyler Stennett, Coauthor Three"
+  venue: "Placeholder Workshop at PLHC (PLHW '26)"
+  year: 2026
+  type: workshop
+  selected: false
+  links:
+    pdf: "#"
+
+- title: "An Earlier Placeholder Paper Before the PhD"
+  authors: "Tyler Stennett, Coauthor Four"
+  venue: "Placeholder Journal of Examples, Vol. 1"
+  year: 2025
+  type: journal
+  selected: true
+  links:
+    pdf: "#"
+    doi: "#"

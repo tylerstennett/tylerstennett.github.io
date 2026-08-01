@@ -1,0 +1,9 @@
+---
+---
+// Shadows jekyll-theme-primer's style.scss (the github-pages gem force-applies
+// that theme as a default). Site files take precedence over theme assets, so
+// this keeps primer's Sass out of the build. The real stylesheet is main.scss.
+@import "variables";
+@import "base";
+@import "layout";
+@import "components";

@@ -1,0 +1,17 @@
+# Talks rendered on /talks/ in reverse chronological order.
+# links keys (slides, video, ...) are optional; only present keys render.
+
+- title: "Placeholder Talk Title: Presenting Placeholder Work"
+  event: "Placeholder Conference (PLHC '26)"
+  location: "Atlanta, GA"
+  date: 2026-04-15
+  links:
+    slides: "#"
+    video: "#"
+
+- title: "An Earlier Placeholder Guest Lecture"
+  event: "Placeholder Seminar Series, Georgia Tech"
+  location: "Atlanta, GA"
+  date: 2025-10-01
+  links:
+    slides: "#"

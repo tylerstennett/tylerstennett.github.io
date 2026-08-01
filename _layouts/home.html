@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<section class="hero">
+  <img class="profile" src="{{ '/assets/img/profile.svg' | relative_url }}" alt="Portrait of {{ site.author.name }}" width="140" height="140">
+  <div class="hero-text">
+    <h1>{{ site.title }}</h1>
+    <p class="hero-subtitle">PhD Student, Computer Science<br>Georgia Institute of Technology</p>
+    <div class="hero-links">
+      <a href="mailto:{{ site.author.email }}">Email</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      {% if site.scholar_url != "" %}<a href="{{ site.scholar_url }}">Google Scholar</a>{% endif %}
+      <a href="{{ '/assets/files/cv.pdf' | relative_url }}">CV</a>
+    </div>
+  </div>
+</section>
+
+<section class="bio">
+  {{ content }}
+</section>
+
+<section class="home-section">
+  <h2 class="eyebrow">News</h2>
+  <ul class="news-list">
+    {% for post in site.posts limit: 4 %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="see-all"><a href="{{ '/blog/' | relative_url }}">All news &rarr;</a></p>
+</section>
+
+{% assign selected = site.data.publications | where: "selected", true %}
+{% if selected.size > 0 %}
+<section class="home-section">
+  <h2 class="eyebrow">Selected Publications</h2>
+  {% for pub in selected limit: 3 %}
+    {% include publication.html pub=pub %}
+  {% endfor %}
+  <p class="see-all"><a href="{{ '/publications/' | relative_url }}">Full list &rarr;</a></p>
+</section>
+{% endif %}
