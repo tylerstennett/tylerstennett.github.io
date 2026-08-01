@@ -42,3 +42,4 @@ exclude:
   - CLAUDE.md
   - vendor
   - .bundle
+  - assets/img/headshot_square.png # full-res source; the site serves headshot.jpg

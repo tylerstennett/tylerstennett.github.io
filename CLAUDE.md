@@ -33,7 +33,7 @@ Use Conventional Commits: `<type>: <subject>` with an imperative, lowercase subj
 - Publications, talks, and teaching entries live in `_data/*.yml` — edit the YAML, not the pages.
 - News items and blog posts are files in `_posts/` named `YYYY-MM-DD-slug.md`; the four most recent appear on the homepage.
 - Publications with `selected: true` appear in the homepage "Selected Publications" section (first three).
-- To replace the placeholder profile image, add `assets/img/profile.jpg` and update the `src` in `_layouts/home.html`.
+- The homepage serves `assets/img/headshot.jpg`, a web-optimized (640px JPEG) version of the full-res source `assets/img/headshot_square.png` (which is excluded from the built site). To update the photo, replace the source and regenerate: `sips -Z 640 -s format jpeg -s formatOptions 85 assets/img/headshot_square.png --out assets/img/headshot.jpg`.
 - Replace `assets/files/cv.pdf` with the real CV; the filename is referenced from `cv.md` and `_layouts/home.html`.
 - Never edit `_site/` — it is generated output and gitignored.
 
