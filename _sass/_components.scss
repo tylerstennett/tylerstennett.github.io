@@ -119,10 +119,17 @@
   }
 }
 
-.post-excerpt {
-  margin: 0.2rem 0 0;
-  color: var(--color-muted);
-  font-size: 0.95rem;
+.post-body {
+  margin: 0.3rem 0 0;
+  font-size: 0.92rem;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .post-meta {
