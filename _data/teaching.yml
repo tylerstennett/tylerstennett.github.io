@@ -1,13 +1,7 @@
 # Teaching entries rendered on /teaching/ in the order listed.
 
-- course: "CS 0000: Placeholder Course Title"
+- course: "CS 6300: Software Development Process"
   role: "Graduate Teaching Assistant"
   institution: "Georgia Institute of Technology"
-  term: "Fall 2025"
-  description: "One-sentence placeholder describing responsibilities (recitations, office hours, grading, project mentoring)."
-
-- course: "CS 0001: Another Placeholder Course"
-  role: "Graduate Teaching Assistant"
-  institution: "Georgia Institute of Technology"
-  term: "Spring 2026"
-  description: "One-sentence placeholder describing responsibilities."
+  term: "Fall 2025 to present"
+  description: "A graduate course on the software development lifecycle, covering requirements, design, implementation, testing, and team-based projects. I grade coursework and hold scheduled office hours, where I share insights on advances in software testing research."
