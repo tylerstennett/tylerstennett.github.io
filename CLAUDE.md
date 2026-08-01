@@ -34,7 +34,7 @@ Use Conventional Commits: `<type>: <subject>` with an imperative, lowercase subj
 - News items are files in `_posts/` named `YYYY-MM-DD-slug.md`; the four most recent appear on the homepage.
 - Publications with `selected: true` appear in the homepage "Selected Publications" section (first three).
 - The homepage serves `assets/img/headshot.jpg`, a web-optimized (640px JPEG) version of the full-res source `assets/img/headshot_square.png` (which is excluded from the built site). To update the photo, replace the source and regenerate: `sips -Z 640 -s format jpeg -s formatOptions 85 assets/img/headshot_square.png --out assets/img/headshot.jpg`.
-- Replace `assets/files/cv.pdf` with the real CV; the filename is referenced from `cv.md` and `_layouts/home.html`.
+- The CV page (`cv.md`) is intentionally a WIP stub for now. A placeholder PDF still lives at `assets/files/cv.pdf` for when the page is built out; nothing currently links to it.
 - Never edit `_site/` — it is generated output and gitignored.
 
 ## Local development
