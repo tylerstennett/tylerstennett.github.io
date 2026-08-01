@@ -10,4 +10,4 @@ bundle exec jekyll serve --livereload
 # → http://localhost:4000
 ```
 
-Requires a modern Ruby (>= 3.1) — see [CLAUDE.md](CLAUDE.md) for one-time setup on macOS, project structure, and repository conventions (conventional commits, `feat/` branch naming).
+Requires Ruby 3.3 — see [CLAUDE.md](CLAUDE.md) for one-time setup on macOS, project structure, and repository conventions (conventional commits, `feat/` branch naming).
