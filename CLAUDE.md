@@ -39,11 +39,11 @@ Use Conventional Commits: `<type>: <subject>` with an imperative, lowercase subj
 
 ## Local development
 
-Requires a modern Ruby (>= 3.1); macOS system Ruby is too old. One-time setup:
+Requires Ruby 3.3 specifically — macOS system Ruby (2.6) is too old, and newer Rubies (4.x) make bundler resolve an outdated `github-pages` gem. Ruby 3.3 matches what GitHub's Pages builder runs. One-time setup:
 
 ```sh
-brew install ruby
-echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc && exec zsh
+brew install ruby@3.3
+echo 'export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"' >> ~/.zshrc && exec zsh
 bundle config set --local path vendor/bundle
 bundle install
 ```
