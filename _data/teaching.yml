@@ -1,0 +1,13 @@
+# Teaching entries rendered on /teaching/ in the order listed.
+
+- course: "CS 0000: Placeholder Course Title"
+  role: "Graduate Teaching Assistant"
+  institution: "Georgia Institute of Technology"
+  term: "Fall 2025"
+  description: "One-sentence placeholder describing responsibilities (recitations, office hours, grading, project mentoring)."
+
+- course: "CS 0001: Another Placeholder Course"
+  role: "Graduate Teaching Assistant"
+  institution: "Georgia Institute of Technology"
+  term: "Spring 2026"
+  description: "One-sentence placeholder describing responsibilities."

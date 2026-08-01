@@ -1,0 +1,21 @@
+// Design tokens. Colors are CSS custom properties so a dark mode can be
+// added later with a single prefers-color-scheme override block.
+
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #f6f7f8;
+  --color-text: #1a1a1a;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-accent: #003057;        // Georgia Tech navy
+  --color-accent-hover: #1a5a8a;
+  --color-gold: #b3a369;          // Georgia Tech gold - small accents only
+}
+
+// Serif display for the name and headings, system sans for body text.
+// All system stacks: zero external font requests.
+$font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+$font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+$breakpoint-sm: 560px;
