@@ -1,9 +1,9 @@
 ---
-title: Blog
-permalink: /blog/
+title: News
+permalink: /news/
 ---
 
-News items and occasional longer posts. Subscribe via <a href="{{ '/feed.xml' | relative_url }}">RSS</a>.
+News and occasional longer posts. Subscribe via <a href="{{ '/feed.xml' | relative_url }}">RSS</a>.
 
 <ul class="post-list">
 {% for post in site.posts %}
