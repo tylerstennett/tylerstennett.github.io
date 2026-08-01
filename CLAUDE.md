@@ -25,7 +25,7 @@ Use Conventional Commits: `<type>: <subject>` with an imperative, lowercase subj
 - `_sass/` — theme partials: `_variables` (design tokens), `_base` (typography), `_layout` (header/container/footer), `_components` (hero, pubs, pills, lists)
 - `_data/` — `publications.yml`, `talks.yml`, `teaching.yml` drive the corresponding pages
 - `_posts/` — blog posts, which double as News items on the homepage
-- Section pages at the repo root: `index.md`, `publications.md`, `cv.md`, `research.md`, `teaching.md`, `talks.md`, `blog.md`
+- Section pages at the repo root: `index.md`, `publications.md`, `cv.md`, `teaching.md`, `talks.md`, `blog.md`
 - `assets/` — `css/main.scss` (Sass entry point), `img/` (profile photo), `files/` (CV PDF)
 
 ## Editing content
