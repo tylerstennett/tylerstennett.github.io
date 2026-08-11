@@ -5,6 +5,17 @@
 # type is one of: conference | journal | workshop | demo | preprint
 # note renders after the venue (e.g. "To appear", "*Equal contribution").
 
+- title: "Tangent: An Empirical Study of Testing Practices for LLM-Based Agent Applications"
+  authors: "Rangeet Pan, Tyler Stennett, Divya Sankar, Bridget McGinn, Alessandro Orso, Raju Pavuluri, Saurabh Sinha, Maja Vukovic"
+  venue: "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE '26)"
+  year: 2026
+  type: conference
+  selected: false
+  note: "To appear"
+  links:
+    pdf: "https://arxiv.org/pdf/2608.08413"
+    code: "https://github.com/aster-test-generation/tangent-ase-2026"
+
 - title: "Sakura: An Approach for Generating Complex Tests from Natural Language Test Descriptions"
   authors: "Tyler Stennett, Rangeet Pan, Bridget McGinn, Alessandro Orso, Saurabh Sinha"
   venue: "Proceedings of the 35th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA '26)"
