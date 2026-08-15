@@ -7,7 +7,7 @@ venue: "ISSTA 2026"
 paper_title: "Sakura: An Approach for Generating Complex Tests from Natural Language Test Descriptions"
 paper_authors: "Tyler Stennett, Rangeet Pan, Bridget McGinn, Alessandro Orso, Saurabh Sinha"
 paper_venue: "35th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2026)"
-paper_url: "https://arxiv.org/abs/2606.00530"
+paper_url: "https://arxiv.org/pdf/2606.00530"
 code_url: "https://github.com/aster-test-generation/sakura"
 ---
 
