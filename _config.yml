@@ -20,6 +20,11 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+
 sass:
   sass_dir: _sass
   style: compressed
@@ -30,6 +35,11 @@ defaults:
       type: "posts"
     values:
       layout: post
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: research-note
   - scope:
       path: ""
     values:

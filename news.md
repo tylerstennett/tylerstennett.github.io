@@ -1,14 +1,18 @@
 ---
-title: News
+layout: null
 permalink: /news/
+sitemap: false
 ---
-
-<ul class="post-list">
-{% for post in site.posts %}
-  <li>
-    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <div class="post-body">{{ post.content }}</div>
-  </li>
-{% endfor %}
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url={{ '/posts/#news' | relative_url }}">
+  <link rel="canonical" href="{{ '/posts/' | absolute_url }}">
+  <title>News | {{ site.title }}</title>
+</head>
+<body>
+  <p>News has moved to <a href="{{ '/posts/#news' | relative_url }}">Posts</a>.</p>
+</body>
+</html>

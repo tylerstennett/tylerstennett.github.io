@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<article class="research-note">
+  <header class="research-note-header">
+    <a class="research-note-label" href="{{ '/posts/' | relative_url }}">Research Note</a>
+    <h1>{{ page.title }}</h1>
+    <p class="research-note-takeaway">{{ page.takeaway }}</p>
+    <p class="research-note-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      <span aria-hidden="true">&middot;</span>
+      <span>{% include reading-time.html content=content %}</span>
+      {% if page.venue %}
+        <span aria-hidden="true">&middot;</span>
+        <span>{{ page.venue }}</span>
+      {% endif %}
+    </p>
+  </header>
+
+  {% if page.paper_title %}
+  <aside class="paper-card" aria-labelledby="paper-card-title">
+    <p class="paper-card-label">Associated paper</p>
+    <h2 id="paper-card-title">{{ page.paper_title }}</h2>
+    {% if page.paper_authors %}<p class="paper-card-authors">{{ page.paper_authors | replace: "Tyler Stennett", "<strong>Tyler Stennett</strong>" }}</p>{% endif %}
+    {% if page.paper_venue %}<p class="paper-card-venue">{{ page.paper_venue }}</p>{% endif %}
+    <div class="paper-card-links">
+      {% if page.paper_url %}<a class="button button-compact" href="{{ page.paper_url }}">Read paper</a>{% endif %}
+      {% if page.code_url %}<a class="pill pill-large" href="{{ page.code_url }}">View code</a>{% endif %}
+      {% if page.doi_url %}<a class="pill pill-large" href="{{ page.doi_url }}">View DOI</a>{% endif %}
+    </div>
+  </aside>
+  {% endif %}
+
+  <div class="research-note-body">
+    {{ content }}
+  </div>
+
+  <p class="back-link"><a href="{{ '/posts/' | relative_url }}">&larr; All posts</a></p>
+</article>

@@ -28,7 +28,7 @@ layout: default
     </li>
     {% endfor %}
   </ul>
-  <p class="see-all"><a href="{{ '/news/' | relative_url }}">All news &rarr;</a></p>
+  <p class="see-all"><a href="{{ '/posts/' | relative_url }}#news">All posts &rarr;</a></p>
 </section>
 
 {% assign selected = site.data.publications | where: "selected", true %}

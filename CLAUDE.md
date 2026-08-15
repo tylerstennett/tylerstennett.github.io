@@ -20,18 +20,20 @@ Use Conventional Commits: `<type>: <subject>` with an imperative, lowercase subj
 ## Project structure
 
 - `_config.yml` — site metadata, plugins, permalink style, front-matter defaults
-- `_layouts/` — `default` (skeleton), `home` (hero + news + selected pubs), `page`, `post`
+- `_layouts/` — `default` (skeleton), `home` (hero + news + selected pubs), `page`, `post`, `research-note`
 - `_includes/` — `head`, `nav`, `footer`, `publication` (renders one publication entry)
 - `_sass/` — theme partials: `_variables` (design tokens), `_base` (typography), `_layout` (header/container/footer), `_components` (hero, pubs, pills, lists)
 - `_data/` — `publications.yml`, `talks.yml`, `teaching.yml` drive the corresponding pages
-- `_posts/` — news items and occasional longer posts, listed at `/news/`
-- Section pages at the repo root: `index.md`, `publications.md`, `cv.md`, `teaching.md`, `talks.md`, `news.md`
+- `_posts/` — short news items listed in the News section at `/posts/`
+- `_research/` — longer, accessible paper overviews listed as Research Notes at `/posts/`
+- Section pages at the repo root: `index.md`, `publications.md`, `cv.md`, `teaching.md`, `talks.md`, `posts.md`
 - `assets/` — `css/main.scss` (Sass entry point), `img/` (profile photo), `files/` (CV PDF)
 
 ## Editing content
 
 - Publications, talks, and teaching entries live in `_data/*.yml` — edit the YAML, not the pages.
 - News items are files in `_posts/` named `YYYY-MM-DD-slug.md`; the four most recent appear on the homepage.
+- Research notes are files in `_research/`. Include `title`, `takeaway`, `description`, `date`, `venue`, and the associated paper metadata in front matter; reading time is calculated automatically.
 - Publications with `selected: true` appear in the homepage "Selected Publications" section (first three).
 - The homepage serves `assets/img/headshot.jpg`, a web-optimized (640px JPEG) version of the full-res source `assets/img/headshot_square.png` (which is excluded from the built site). To update the photo, replace the source and regenerate: `sips -Z 640 -s format jpeg -s formatOptions 85 assets/img/headshot_square.png --out assets/img/headshot.jpg`.
 - The CV page (`cv.md`) is intentionally a WIP stub for now. A placeholder PDF still lives at `assets/files/cv.pdf` for when the page is built out; nothing currently links to it.

@@ -2,10 +2,18 @@
   <div class="site-header-inner">
     <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <nav class="site-nav">
-      {% assign nav_items = "Publications:/publications/|Teaching:/teaching/|Talks:/talks/|CV:/cv/|News:/news/" | split: "|" %}
+      {% assign nav_items = "Publications:/publications/|Teaching:/teaching/|Talks:/talks/|CV:/cv/|Posts:/posts/" | split: "|" %}
       {% for item in nav_items %}
         {% assign parts = item | split: ":" %}
-        <a href="{{ parts[1] | relative_url }}"{% if page.url contains parts[1] %} class="active"{% endif %}>{{ parts[0] }}</a>
+        {% assign nav_active = false %}
+        {% if page.url contains parts[1] %}
+          {% assign nav_active = true %}
+        {% elsif parts[0] == "Posts" %}
+          {% if page.url contains "/research/" or page.url contains "/news/" %}
+            {% assign nav_active = true %}
+          {% endif %}
+        {% endif %}
+        <a href="{{ parts[1] | relative_url }}"{% if nav_active %} class="active"{% endif %}>{{ parts[0] }}</a>
       {% endfor %}
     </nav>
   </div>

@@ -4,7 +4,7 @@
   <div class="pub-venue">{{ include.pub.venue }}, {{ include.pub.year }}{% if include.pub.note %} &middot; <span class="pub-note">{{ include.pub.note }}</span>{% endif %}</div>
   {% if include.pub.links %}
   <div class="pub-links">
-    {% for link in include.pub.links %}<a class="pill" href="{{ link[1] }}">{{ link[0] }}</a>{% endfor %}
+    {% for link in include.pub.links %}<a class="pill{% if link[0] == 'overview' %} pill-featured{% endif %}" href="{{ link[1] }}">{{ link[0] }}</a>{% endfor %}
   </div>
   {% endif %}
 </div>

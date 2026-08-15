@@ -24,6 +24,7 @@
   selected: true
   note: "To appear"
   links:
+    overview: "/research/sakura/"
     pdf: "https://arxiv.org/pdf/2606.00530"
     code: "https://github.com/aster-test-generation/sakura"
 
