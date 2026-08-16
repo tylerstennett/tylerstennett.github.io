@@ -1,7 +1,7 @@
 title: Tyler Stennett
 description: >-
   PhD student in Computer Science at the Georgia Institute of Technology.
-url: "https://tylerstennett.github.io"
+url: "https://tylerstennett.com"
 baseurl: ""
 
 author:
@@ -10,6 +10,11 @@ author:
 
 github_username: tylerstennett
 scholar_url: "https://scholar.google.com/citations?user=t2rIsdIAAAAJ&hl=en"
+
+# Cloudflare Web Analytics is enabled on production builds when this public
+# site token is populated. Keep it blank to disable analytics.
+cloudflare_web_analytics:
+  token: "62c5b471cbcd4179a971ba19ab03fc8c"
 
 markdown: kramdown
 highlighter: rouge

@@ -1,0 +1,6 @@
+{% assign cloudflare_token = site.cloudflare_web_analytics.token | default: "" | strip %}
+{% if jekyll.environment == "production" and cloudflare_token != "" %}
+<!-- Cloudflare Web Analytics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"{{ cloudflare_token }}"}'></script>
+<!-- End Cloudflare Web Analytics -->
+{% endif %}
