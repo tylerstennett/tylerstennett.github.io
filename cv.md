@@ -7,8 +7,6 @@ pdf: /assets/files/Tyler_Stennett_CV.pdf
 
 {% assign cv_url = page.pdf | relative_url %}
 
-<p class="page-intro">My full curriculum vitae: education, research experience, publications, awards, teaching, and service.</p>
-
 <div class="cv-actions">
   <a class="button" href="{{ cv_url }}" download="Tyler_Stennett_CV.pdf">Download PDF</a>
   <a class="cv-open" href="{{ cv_url }}" target="_blank" rel="noopener">Open in new tab <span aria-hidden="true">&#8599;</span></a>

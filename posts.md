@@ -4,7 +4,7 @@ description: Accessible research notes about my papers and shorter updates about
 permalink: /posts/
 ---
 
-<p class="page-intro">Longer, accessible notes about my research, followed by shorter updates and announcements.</p>
+<p class="page-intro">Longer, more readable notes about my research, followed by shorter updates and announcements.</p>
 
 <section class="posts-section" aria-labelledby="research-notes-heading">
   <h2 class="eyebrow" id="research-notes-heading">Research Notes</h2>
