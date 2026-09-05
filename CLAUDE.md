@@ -36,7 +36,7 @@ Use Conventional Commits: `<type>: <subject>` with an imperative, lowercase subj
 - Research notes are files in `_research/`. Include `title`, `takeaway`, `description`, `date`, `venue`, and the associated paper metadata in front matter; reading time is calculated automatically.
 - Publications with `selected: true` appear in the homepage "Selected Publications" section (first three).
 - The homepage serves `assets/img/headshot.jpg`, a web-optimized (640px JPEG) version of the full-res source `assets/img/headshot_square.png` (which is excluded from the built site). To update the photo, replace the source and regenerate: `sips -Z 640 -s format jpeg -s formatOptions 85 assets/img/headshot_square.png --out assets/img/headshot.jpg`.
-- The CV page (`cv.md`) is intentionally a WIP stub for now. A placeholder PDF still lives at `assets/files/cv.pdf` for when the page is built out; nothing currently links to it.
+- The CV page (`cv.md`) embeds `assets/files/Tyler_Stennett_CV.pdf` in an inline viewer with download and open-in-new-tab buttons (touch devices get only the buttons). To update the CV, replace the PDF in place, keeping the filename, and bump `updated` in the front matter of `cv.md`.
 - Never edit `_site/` — it is generated output and gitignored.
 
 ## Local development

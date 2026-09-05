@@ -419,6 +419,65 @@
   }
 }
 
+// CV page: action row above an inline PDF viewer
+
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1.1rem;
+  margin: 0 0 1.25rem;
+
+  .button {
+    margin: 0;
+  }
+}
+
+.cv-open {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.cv-updated {
+  margin-left: auto;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.cv-viewer {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--color-surface);
+}
+
+.cv-embed {
+  display: block;
+  width: 100%;
+  height: clamp(520px, 82vh, 1000px);
+}
+
+.cv-fallback {
+  margin: 0;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  color: var(--color-muted);
+}
+
+// Touch devices either refuse to render PDFs inline (Android) or show only
+// the first page (iOS), so hide the viewer there and rely on the buttons.
+@media (hover: none) and (pointer: coarse) {
+  .cv-viewer {
+    display: none;
+  }
+}
+
 @media (max-width: $breakpoint-sm) {
   .post-preview {
     padding: 1rem;
