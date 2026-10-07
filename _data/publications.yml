@@ -25,6 +25,7 @@
   note: "To appear"
   links:
     pdf: "https://arxiv.org/pdf/2606.00530"
+    doi: "https://doi.org/10.1145/3832112"
     code: "https://github.com/aster-test-generation/sakura"
 
 - title: "SAINT: Service-level Integration Test Generation with Program Analysis and LLM-based Agents"
