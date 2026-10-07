@@ -22,7 +22,6 @@
   year: 2026
   type: conference
   selected: true
-  note: "To appear"
   links:
     pdf: "https://arxiv.org/pdf/2606.00530"
     doi: "https://doi.org/10.1145/3832112"
