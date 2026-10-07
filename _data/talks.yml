@@ -1,6 +1,16 @@
 # Talks rendered on /talks/ in reverse chronological order.
 # links keys (slides, video, ...) are optional; only present keys render.
 
+- title: "Tangent: An Empirical Study of Testing Practices for LLM-Based Agent Applications"
+  event: "ASE 2026"
+  location: "Munich, Germany"
+  date: 2026-10-15
+
+- title: "Sakura: An Approach for Generating Complex Tests from Natural Language Test Descriptions"
+  event: "ISSTA 2026 (co-located with SPLASH 2026)"
+  location: "Oakland, California, USA"
+  date: 2026-10-09
+
 - title: "Hamster: A Large-Scale Study and Characterization of Developer-Written Tests"
   event: "ICSE-SEIP 2026"
   location: "Rio de Janeiro, Brazil"
