@@ -34,6 +34,7 @@ Use Conventional Commits: `<type>: <subject>` with an imperative, lowercase subj
 - News items are files in `_posts/` named `YYYY-MM-DD-slug.md`; the four most recent appear on the homepage.
 - Publications with `selected: true` appear in the homepage "Selected Publications" section (first three).
 - The homepage serves `assets/img/headshot.jpg`, a web-optimized (640px JPEG) version of the full-res source `assets/img/headshot_square.png` (which is excluded from the built site). To update the photo, replace the source and regenerate: `sips -Z 640 -s format jpeg -s formatOptions 85 assets/img/headshot_square.png --out assets/img/headshot.jpg`.
+- Link previews (LinkedIn, Slack, etc.) use `assets/img/og-banner.jpg`, a 1200×627 banner built from the headshot (navy band, circular photo, name and title). It is set site-wide as the default `image` in `_config.yml`; a page can override it with its own `image:` front matter. If the headshot or title changes, regenerate the banner to match, then re-scrape with LinkedIn Post Inspector.
 - The CV page (`cv.md`) embeds `assets/files/Tyler_Stennett_CV.pdf` in an inline viewer with download and open-in-new-tab buttons (touch devices get only the buttons). To update the CV, replace the PDF in place, keeping the filename, and bump `updated` in the front matter of `cv.md`.
 - Never edit `_site/` — it is generated output and gitignored.
 
